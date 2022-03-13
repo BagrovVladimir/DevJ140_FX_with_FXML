@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="rootConnectionStage"  prefHeight="400.0" prefWidth="600.0" 
+          stylesheets="/css_package/CSSConnectionStage.css" styleClass="mainFxmlClass" 
+          xmlns:fx="http://javafx.com/fxml/1" 
+          fx:controller="controllers.ContConnectionStage">
+    <FlowPane GridPane.rowIndex="0" GridPane.columnIndex="0" >
+        <children>
+            <Label fx:id="topLabel" text="Enter your login and password" />
+        </children>
+    </FlowPane>
+    
+    <GridPane GridPane.rowIndex="1" GridPane.columnIndex="0">
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="urlLabel" text="URL: " />
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="urlField" />  
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="loginLabel" text="Login: " />
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="loginField" />  
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="pswLabel" text="Password: " />
+        <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="passwordField" />  
+    </GridPane>
+    
+    <FlowPane GridPane.rowIndex="2" GridPane.columnIndex="0" >
+        <children>
+            <Button text="Sign in"  onAction="#handleButtonAction" fx:id="buttonStart" />
+        </children>
+    </FlowPane>
+    
+    <FlowPane GridPane.rowIndex="0" GridPane.columnIndex="0" >
+        <children>
+            <Label fx:id="infoLabel" />
+        </children>
+    </FlowPane>
+    
+</GridPane>

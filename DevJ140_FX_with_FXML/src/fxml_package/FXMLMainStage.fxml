@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="300" prefWidth="350" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="controllers.ContMainStage">
+        <center>
+            <VBox id="VBox" stylesheets="/css_package/CSSMainStage.css" styleClass="mainFxmlClass">
+                <children>    
+                    <Label layoutX="126" layoutY="90" text="Press 'Start' to begin" minHeight="16" minWidth="69" fx:id="startLabel" />
+                    <Button layoutX="126" layoutY="120" text="Start" onAction="#handleButtonAction" fx:id="buttonStart" />
+                </children>
+            </VBox>
+        </center>
+        <bottom>
+        <Label layoutX="50" layoutY="150" text="All rights reserved by me :-)" minHeight="16" minWidth="69" fx:id="allRightsLabel" />
+        </bottom>
+</BorderPane>

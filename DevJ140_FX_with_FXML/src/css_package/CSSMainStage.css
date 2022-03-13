@@ -1,0 +1,9 @@
+.mainFxmlClass {
+    -fx-background-color: orange;
+    -fx-alignment: CENTER;
+    -fx-hgap: 50pt;
+    -fx-vgap: 50pt;
+}
+
+
+

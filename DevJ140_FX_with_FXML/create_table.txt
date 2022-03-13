@@ -1,0 +1,20 @@
+CREATE TABLE Personal_championships(id INTEGER PRIMARY KEY GENERATED ALWAYS
+                                    AS IDENTITY (START WITH 1, INCREMENT BY 1),
+                                    season INTEGER NOT NULL,
+                                    racer VARCHAR(128) NOT NULL,
+                                    points INTEGER NOT NULL,
+                                    chassis VARCHAR(64) NOT NULL,
+                                    engine VARCHAR(64) NOT NULL );
+
+INSERT INTO Personal_championships (season, racer, points, chassis, engine) VALUES
+            (1974, 'Emerson Fittipaldi', 55, 'M23', 'Ford Cosworth DFV'),
+            (1976, 'James Hunt', 69, 'M26', 'Ford Cosworth DFV'),
+            (1984, 'Niki Lauda', 72, 'MP4/2', 'TAG/Porsche P01'),
+            (1985, 'Alain Prost', 76, 'MP4/2B', 'TAG/Porsche P01'),
+            (1986, 'Alain Prost', 72, 'MP4/2C', 'TAG/Porsche P01'),
+            (1988, 'Ayrton Senna', 90, 'MP4/4', 'Honda RA186E(T)'),
+            (1989, 'Alain Prost', 76, 'MP4/5', 'Honda RA109A'),
+            (1990, 'Ayrton Senna', 78, 'MP4/5B', 'Honda RA109E'),
+            (1991, 'Ayrton Senna', 96, 'MP4/6', 'Honda RA121E');
+
+SELECT * FROM Personal_championships;
