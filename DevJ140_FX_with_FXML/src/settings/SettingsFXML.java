@@ -14,7 +14,7 @@ import java.util.Properties;
  *
  * @author Владимир
  */
-public class Settings {
+public class SettingsFXML {
     
     Properties properties;
     
@@ -22,9 +22,9 @@ public class Settings {
     public final static String LOGIN = "login";
     public final static String PSW = "psw";
 
-    public Settings() {
+    public SettingsFXML() {
         properties = new Properties();
-        File file = new File("settings.prop");  
+        File file = new File("properties.prop");  
         try { 
             if(!file.exists())
                 file.createNewFile();

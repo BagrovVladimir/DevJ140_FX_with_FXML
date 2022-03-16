@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import settings.Settings;
+import settings.SettingsFXML;
 
 /**
  *
@@ -42,12 +42,11 @@ public class Champions {
     
     public static ObservableList<Champions> getChampionsList(){
         List<Champions> list = new ArrayList<>();
-        Settings settings = new Settings();
+        SettingsFXML settings = new SettingsFXML();
         
-        try (Connection connection = DriverManager.getConnection(
-                    settings.getValue(Settings.URL),
-                    settings.getValue(Settings.LOGIN),
-                    settings.getValue(Settings.PSW));){
+        try (Connection connection = DriverManager.getConnection(settings.getValue(SettingsFXML.URL),
+                    settings.getValue(SettingsFXML.LOGIN),
+                    settings.getValue(SettingsFXML.PSW));){
             Statement stm = connection.createStatement();
             ResultSet rs = stm.executeQuery("SELECT * FROM Personal_championships");
             Champions champion = null;

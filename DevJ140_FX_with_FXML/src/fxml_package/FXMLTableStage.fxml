@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="VBox" prefHeight="600.0" prefWidth="800.0" stylesheets="/css_package/CSSTableStage.css"
+            styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" 
+            fx:controller="controllers.ContTableStage">
+    <children>
+        <TableView fx:id="table">
+            <columns>
+                <TableColumn text="Id" fx:id="id"  />
+                <TableColumn text="Season" fx:id="season"  />
+                <TableColumn text="Reacer" fx:id="reacer"  />
+                <TableColumn text="Points" fx:id="points"  />
+                <TableColumn text="Shassis" fx:id="shassis"  />
+                <TableColumn text="Engine" fx:id="engine"  />
+            </columns>
+        </TableView>
+        <FlowPane>
+        <children>
+            <Button text="Add record"  onAction="#handleButtonAction" fx:id="addRecord" />
+            <Button text="Udate table"  onAction="#handleButtonAction" fx:id="udateTable" />
+        </children>
+        </FlowPane>    
+    </children>
+</VBox>
