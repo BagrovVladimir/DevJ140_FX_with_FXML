@@ -19,6 +19,5 @@ public class TableStage extends Stage{
         setTitle("Personal championships");
         setScene(scene);
         show();
-    }
-    
+    }   
 }

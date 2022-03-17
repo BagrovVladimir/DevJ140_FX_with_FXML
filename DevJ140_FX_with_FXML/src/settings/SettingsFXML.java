@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package settings;
 
 import java.io.File;
@@ -10,10 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
- *
- * @author Владимир
- */
+
 public class SettingsFXML {
     
     Properties properties;
@@ -37,6 +30,5 @@ public class SettingsFXML {
     public String getValue(String key){
         String value = properties.getProperty(key);
         return value;
-    }
-    
+    } 
 }

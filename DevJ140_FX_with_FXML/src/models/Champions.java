@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package models;
 
 import java.sql.Connection;
@@ -19,10 +15,7 @@ import javafx.collections.ObservableList;
 import settings.SettingsFXML;
 import controllers.ContAddRecordStage;
 
-/**
- *
- * @author Владимир
- */
+
 public class Champions {
     
     private Integer id;
@@ -68,29 +61,6 @@ public class Champions {
         
         return FXCollections.observableArrayList(list);
     }
-    
-//    public static void addChampions(){
-//    
-//        SettingsFXML settings = new SettingsFXML();
-//        try (Connection connection = DriverManager.getConnection(
-//                    settings.getValue(SettingsFXML.URL),
-//                    settings.getValue(SettingsFXML.LOGIN),
-//                    settings.getValue(SettingsFXML.PSW));){
-//            Statement stm = connection.createStatement();
-//            String sql = "INSERT INTO Personal_championships "
-//                    + "(season, racer, points, chassis, engine) "
-//                    + "VALUES (" + ContAddRecordStage.getTextSeasonField() + ", '"
-//                    + ContAddRecordStage.getTextRacerField() + "', "
-//                    + ContAddRecordStage.getTextPointsField() + ", '"
-//                    + ContAddRecordStage.getTextShassisField() + "', '"
-//                    + ContAddRecordStage.getTextEngineField() + "')";
-//
-//            stm.executeUpdate(sql);
-//            
-//        } catch (SQLException ex) {
-//            Logger.getLogger(Champions.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//    }
 
     public Integer getId() {
         return id;
