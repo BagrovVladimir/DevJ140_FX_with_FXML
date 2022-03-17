@@ -14,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import settings.SettingsFXML;
 import stages.TableStage;
@@ -27,31 +28,26 @@ public class ContConnectionStage implements Initializable {
     @FXML
     TextField loginField;
     @FXML
-    TextField passwordField;
+    PasswordField passwordField;
     
     
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
         SettingsFXML settings = new SettingsFXML();
-        System.out.println("Here worked");
         boolean invalidURL = !urlField.getText().equals(settings.getValue(SettingsFXML.URL));
         boolean invalidLogin = !loginField.getText().equals(settings.getValue(SettingsFXML.LOGIN));
         boolean invalidPassword = !passwordField.getText().equals(settings.getValue(SettingsFXML.PSW));
             if(invalidURL || invalidLogin || invalidPassword)
                 {infoLabel.setText("Something wrong");}
             else {infoLabel.setText("Everything ok");
-            System.out.println("!!!!!!!");
-            try {
-                
+                try {
                 TableStage tableStage = new TableStage();
-            } catch (IOException ex) {
+                } catch (IOException ex) {
                 Logger.getLogger(ContConnectionStage.class.getName()).log(Level.SEVERE, null, ex);
-            }
-}
-
-            
-            System.out.println("Done");
+                }
+            } 
+            System.out.println("DoneConnectionStage");
     }
 
     @Override

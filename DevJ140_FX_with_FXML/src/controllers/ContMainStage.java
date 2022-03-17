@@ -29,11 +29,11 @@ public class ContMainStage implements Initializable {
     private void handleButtonAction(ActionEvent event) {
         try {
             ConnectionStage connectionStage = new ConnectionStage();
-            System.out.println("You clicked me!");
+            System.out.println("DoneTryMainStage");
         } catch (IOException ex) {
             Logger.getLogger(ContMainStage.class.getName()).log(Level.SEVERE, null, ex);
         }
-        System.out.println("You clicked me!");
+        System.out.println("DoneMainStage");
 
     }
     

@@ -3,5 +3,17 @@
  */
 
 .mainFxmlClass {
+    -fx-background-color: red;
+    -fx-alignment: CENTER;
+    -fx-hgap: 50pt;
+    -fx-vgap: 50pt
 
+}
+
+.label{
+    -fx-text-fill: blue
+}
+
+.button{
+    -fx-color: white
 }

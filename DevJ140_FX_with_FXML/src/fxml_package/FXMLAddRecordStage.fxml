@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="GridPane" prefHeight="400.0" prefWidth="600.0" 
+            stylesheets="/css_package/CSSAddRecordStage.css" styleClass="mainFxmlClass" 
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ContAddRecordStage">
+    
+     <GridPane GridPane.rowIndex="0" GridPane.columnIndex="0">
+        <Label GridPane.rowIndex="0" GridPane.columnIndex="0" fx:id="season" text="Season: " />
+        <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="seasonField" />  
+        <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="racer" text="Racer: " />
+        <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="racerField" />  
+        <Label GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="points" text="Points: " />
+        <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="pointsField" />
+        <Label GridPane.rowIndex="3" GridPane.columnIndex="0" fx:id="shassis" text="Shassis: " />
+        <TextField GridPane.rowIndex="3" GridPane.columnIndex="1" fx:id="shassisField" />
+        <Label GridPane.rowIndex="4" GridPane.columnIndex="0" fx:id="engine" text="Engine: " />
+        <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="engineField" />    
+    </GridPane>
+    
+    <FlowPane GridPane.rowIndex="1" GridPane.columnIndex="0" >
+        <children>
+            <Button text="Add"  onAction="#handleButtonAction" fx:id="buttonAdd" />
+        </children>
+    </FlowPane>
+    
+    <FlowPane GridPane.rowIndex="2" GridPane.columnIndex="0" >
+        <children>
+            <Label fx:id="infoLabel" />
+        </children>
+    </FlowPane>
+
+</GridPane>

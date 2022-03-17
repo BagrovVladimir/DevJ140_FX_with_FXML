@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: silver;
+    -fx-alignment: CENTER;
+    -fx-hgap: 20pt;
+    -fx-vgap: 20pt;
+
+}
+
+.label{
+    -fx-text-fill: red;
+}
+
+.button{
+    -fx-color: black;
+
+}
+

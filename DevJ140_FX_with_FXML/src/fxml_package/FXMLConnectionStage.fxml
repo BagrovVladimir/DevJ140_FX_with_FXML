@@ -23,7 +23,7 @@
         <Label GridPane.rowIndex="1" GridPane.columnIndex="0" fx:id="loginLabel" text="Login: " />
         <TextField GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="loginField" />  
         <Label GridPane.rowIndex="2" GridPane.columnIndex="0" fx:id="passwordLabel" text="Password: " />
-        <TextField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="passwordField" />  
+        <PasswordField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="passwordField" />  
     </GridPane>
     
     <FlowPane GridPane.rowIndex="2" GridPane.columnIndex="0" >

@@ -17,6 +17,7 @@ import java.util.logging.Logger;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import settings.SettingsFXML;
+import controllers.ContAddRecordStage;
 
 /**
  *
@@ -70,20 +71,19 @@ public class Champions {
     
 //    public static void addChampions(){
 //    
-//        Settings settings = new Settings();
-//        
+//        SettingsFXML settings = new SettingsFXML();
 //        try (Connection connection = DriverManager.getConnection(
-//                    settings.getValue(Settings.URL),
-//                    settings.getValue(Settings.LOGIN),
-//                    settings.getValue(Settings.PSW));){
+//                    settings.getValue(SettingsFXML.URL),
+//                    settings.getValue(SettingsFXML.LOGIN),
+//                    settings.getValue(SettingsFXML.PSW));){
 //            Statement stm = connection.createStatement();
 //            String sql = "INSERT INTO Personal_championships "
 //                    + "(season, racer, points, chassis, engine) "
-//                    + "VALUES (" + AddRecordStage.getTextSeasonField() + ", '"
-//                    + AddRecordStage.getTextRacerField() + "', "
-//                    + AddRecordStage.getTextPointsField() + ", '"
-//                    + AddRecordStage.getTextShassisField() + "', '"
-//                    + AddRecordStage.getTextEngineField() + "')";
+//                    + "VALUES (" + ContAddRecordStage.getTextSeasonField() + ", '"
+//                    + ContAddRecordStage.getTextRacerField() + "', "
+//                    + ContAddRecordStage.getTextPointsField() + ", '"
+//                    + ContAddRecordStage.getTextShassisField() + "', '"
+//                    + ContAddRecordStage.getTextEngineField() + "')";
 //
 //            stm.executeUpdate(sql);
 //            

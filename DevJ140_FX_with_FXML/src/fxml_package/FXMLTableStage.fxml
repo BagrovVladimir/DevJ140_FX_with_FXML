@@ -15,7 +15,7 @@
             <columns>
                 <TableColumn text="Id" fx:id="id"  />
                 <TableColumn text="Season" fx:id="season"  />
-                <TableColumn text="Reacer" fx:id="reacer"  />
+                <TableColumn text="Racer" fx:id="racer"  />
                 <TableColumn text="Points" fx:id="points"  />
                 <TableColumn text="Shassis" fx:id="shassis"  />
                 <TableColumn text="Engine" fx:id="engine"  />
@@ -23,8 +23,8 @@
         </TableView>
         <FlowPane>
         <children>
-            <Button text="Add record"  onAction="#handleButtonAction" fx:id="addRecord" />
-            <Button text="Udate table"  onAction="#handleButtonAction" fx:id="udateTable" />
+            <Button text="Add record"  onAction="#handleButtonActionAddRecord" fx:id="addRecord" />
+            <Button text="Update table"  onAction="#handleButtonActionUpdateTable" fx:id="updateTable" />
         </children>
         </FlowPane>    
     </children>
